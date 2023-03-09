@@ -9,12 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gsap": "^3.11.4",
     "three": "^0.150.1",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.43.2",
+    "@types/gsap": "^3.0.0",
     "@types/three": "^0.149.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "sass": "^1.58.3",

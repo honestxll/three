@@ -11,6 +11,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "Transform Objects",
     component: () => import("@/views/TransformObjects.vue"),
   },
+  {
+    path: "/animations",
+    name: "Animations",
+    component: () => import("@/views/Animations.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
