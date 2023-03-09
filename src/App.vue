@@ -1,13 +1,16 @@
 <script setup lang="ts">
-const onCollapse = (val: any, type: string) => {
-  const content = type === "responsive" ? "触发响应式收缩" : "点击触发收缩";
-};
+import { demoRoutes } from "./router";
 </script>
 
 <template>
   <div class="layout">
     <div class="navbar">
-      <router-link to="/">Basic Scene</router-link>
+      <router-link
+        :to="item.path"
+        v-for="(item, index) in demoRoutes"
+        :key="index"
+        >{{ item.name }}</router-link
+      >
     </div>
     <section class="content">
       <router-view></router-view>
@@ -15,5 +18,4 @@ const onCollapse = (val: any, type: string) => {
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

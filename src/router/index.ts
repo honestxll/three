@@ -1,14 +1,28 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 
-export const routes = [
+export const demoRoutes: RouteRecordRaw[] = [
   {
-    path: '/',
-    name: 'BasicScene',
-    component: () => import('@/views/BasicScene.vue'),
-  }
-]
+    path: "/basic-scene",
+    name: "Basic Scene",
+    component: () => import("@/views/BasicScene.vue"),
+  },
+  {
+    path: "/transform-objects",
+    name: "Transform Objects",
+    component: () => import("@/views/TransformObjects.vue"),
+  },
+];
+
+export const routes: RouteRecordRaw[] = [
+  {
+    path: "/",
+    name: "Home",
+    redirect: "/basic-scene",
+  },
+  ...demoRoutes,
+];
 
 export default createRouter({
   history: createWebHashHistory(),
   routes,
-})
+});
