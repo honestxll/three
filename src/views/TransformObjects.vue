@@ -3,14 +3,39 @@ import * as THREE from "three";
 import { onMounted } from "vue";
 const scene = new THREE.Scene();
 
-// Red cube
-const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: "#ff0000" });
-const mesh = new THREE.Mesh(geometry, material);
-scene.add(mesh);
-mesh.position.x = 0.7;
-mesh.position.y = -0.6;
-mesh.position.z = 1;
+/**
+ * Group 物体组
+ * 可以统一设置物体的运动、位置、旋转等
+ */
+const group = new THREE.Group();
+group.rotation.y = 1;
+scene.add(group);
+
+// some objects
+const cube1 = new THREE.Mesh(
+  new THREE.BoxGeometry(1, 1, 1),
+  new THREE.MeshBasicMaterial({ color: "#ff0000" })
+);
+cube1.position.x = -2;
+group.add(cube1);
+
+const cube2 = new THREE.Mesh(
+  new THREE.BoxGeometry(1, 1, 1),
+  new THREE.MeshBasicMaterial({ color: "#00ff00" })
+);
+cube2.position.x = 2;
+group.add(cube2);
+
+const cube3 = new THREE.Mesh(
+  new THREE.BoxGeometry(1, 1, 1),
+  new THREE.MeshBasicMaterial({ color: "#0000ff" })
+);
+cube3.position.x = 0;
+group.add(cube3);
+
+// Axes helper
+const axesHelper = new THREE.AxesHelper(3);
+scene.add(axesHelper);
 
 // Sizes
 const sizes = {
@@ -25,7 +50,7 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
-camera.position.z = 3;
+camera.position.set(1, 1, 5);
 scene.add(camera);
 
 // Renderer
