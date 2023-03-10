@@ -26,6 +26,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "OrbitControls",
     component: () => import("@/views/OrbitControls.vue"),
   },
+  {
+    path: "/fullscreen-and-resize",
+    name: "FullscreenAndResize",
+    component: () => import("@/views/FullscreenAndResize.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [

@@ -3,7 +3,6 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   // background-color: #242424;
 
   font-synthesis: none;
@@ -16,6 +15,11 @@
 :root {
   --primaryColor: #42b883;
 }
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}
 #app {
   height: 100vh;
 }
@@ -27,12 +31,14 @@
 }
 .content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .navbar {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
   a {
     color: #333;
     text-decoration: none;
@@ -56,4 +62,7 @@
       }
     }
   }
+}
+canvas {
+  outline: none;
 }
