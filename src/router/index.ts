@@ -16,6 +16,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "Animations",
     component: () => import("@/views/Animations.vue"),
   },
+  {
+    path: "/mouse-move",
+    name: "MouseMove",
+    component: () => import("@/views/MouseMove.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
