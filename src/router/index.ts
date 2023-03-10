@@ -21,6 +21,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "MouseMove",
     component: () => import("@/views/MouseMove.vue"),
   },
+  {
+    path: "/orbit-controls",
+    name: "OrbitControls",
+    component: () => import("@/views/OrbitControls.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
