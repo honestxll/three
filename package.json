@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dat.gui": "^0.7.9",
     "gsap": "^3.11.4",
     "three": "^0.150.1",
     "vue": "^3.2.45",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@arco-design/web-vue": "^2.43.2",
+    "@types/dat.gui": "^0.7.7",
     "@types/gsap": "^3.0.0",
     "@types/three": "^0.149.0",
     "@vitejs/plugin-vue": "^4.0.0",

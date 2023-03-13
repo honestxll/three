@@ -36,6 +36,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "Geometry",
     component: () => import("@/views/Geometry.vue"),
   },
+  {
+    path: "/debug",
+    name: "Debug",
+    component: () => import("@/views/Debug.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
