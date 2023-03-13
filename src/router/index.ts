@@ -31,6 +31,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "FullscreenAndResize",
     component: () => import("@/views/FullscreenAndResize.vue"),
   },
+  {
+    path: "/geometry",
+    name: "Geometry",
+    component: () => import("@/views/Geometry.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
