@@ -10,3 +10,11 @@ declare module "*.vue" {
 declare module "three/addons/controls/OrbitControls" {
   export * from "three/examples/jsm/controls/OrbitControls";
 }
+
+declare module "three/addons/loaders/FontLoader" {
+  export * from "three/examples/jsm/loaders/FontLoader";
+}
+
+declare module "three/addons/geometries/TextGeometry" {
+  export * from "three/examples/jsm/geometries/TextGeometry";
+}
