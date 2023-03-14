@@ -46,6 +46,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "Textures",
     component: () => import("@/views/Textures.vue"),
   },
+  {
+    path: "/material",
+    name: "Material",
+    component: () => import("@/views/Material.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
