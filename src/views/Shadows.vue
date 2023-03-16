@@ -94,7 +94,6 @@ onMounted(() => {
   // OrbitControls
   const control = new OrbitControls(camera, canvas);
   control.enableDamping = true;
-  control.enableDamping = true;
   control.update();
 
   const clock = new THREE.Clock();
