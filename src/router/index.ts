@@ -71,6 +71,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "Haunted House",
     component: () => import("@/views/HauntedHouse.vue"),
   },
+  {
+    path: "/particles",
+    name: "Particles",
+    component: () => import("@/views/Particles.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
