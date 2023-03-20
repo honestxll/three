@@ -76,6 +76,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "Particles",
     component: () => import("@/views/Particles.vue"),
   },
+  {
+    path: "/galaxy-generator",
+    name: "Galaxy Generator",
+    component: () => import("@/views/GalaxyGenerator.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
