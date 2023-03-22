@@ -81,6 +81,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "Galaxy Generator",
     component: () => import("@/views/GalaxyGenerator.vue"),
   },
+  {
+    path: "/raycaster",
+    name: "Raycaster",
+    component: () => import("@/views/Raycaster.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
