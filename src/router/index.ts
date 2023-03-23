@@ -86,6 +86,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "Raycaster",
     component: () => import("@/views/Raycaster.vue"),
   },
+  {
+    path: "/scroll-based-animation",
+    name: "ScrollBasedAnimation",
+    component: () => import("@/views/ScrollBasedAnimation.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [

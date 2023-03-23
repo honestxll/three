@@ -83,7 +83,7 @@ fontLoader.load("/fonts/helvetiker_regular.typeface.json", (font) => {
 
 // Sizes
 const sizes = {
-  width: window.innerWidth - 200,
+  width: window.innerWidth - 300,
   height: window.innerHeight,
 };
 
@@ -138,7 +138,7 @@ onMounted(() => {
         canvas.webkitRequestFullscreen();
       }
     } else {
-      sizes.width = window.innerWidth - 200;
+      sizes.width = window.innerWidth - 300;
       sizes.height = window.innerHeight;
       updateCanvasSize();
       if (document.exitFullscreen) {

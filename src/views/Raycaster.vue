@@ -42,7 +42,7 @@ const mouse = new THREE.Vector2();
 let currentIntersect: THREE.Object3D | null = null;
 
 window.addEventListener("pointermove", (event) => {
-  mouse.x = ((event.clientX - 200) / sizes.width) * 2 - 1;
+  mouse.x = ((event.clientX - 300) / sizes.width) * 2 - 1;
   mouse.y = -((event.clientY / sizes.height) * 2 - 1);
 });
 
@@ -62,7 +62,7 @@ scene.add(axesHelper);
 
 // Sizes
 const sizes = {
-  width: window.innerWidth - 200,
+  width: window.innerWidth - 300,
   height: window.innerHeight,
 };
 

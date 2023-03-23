@@ -144,7 +144,7 @@ scene.add(axesHelper);
 
 // Sizes
 const sizes = {
-  width: window.innerWidth - 200,
+  width: window.innerWidth - 300,
   height: window.innerHeight,
 };
 
