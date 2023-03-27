@@ -91,6 +91,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "ScrollBasedAnimation",
     component: () => import("@/views/ScrollBasedAnimation.vue"),
   },
+  {
+    path: "/physics",
+    name: "Physics",
+    component: () => import("@/views/Physics.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
