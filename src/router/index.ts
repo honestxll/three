@@ -96,6 +96,11 @@ export const demoRoutes: RouteRecordRaw[] = [
     name: "Physics",
     component: () => import("@/views/Physics.vue"),
   },
+  {
+    path: "/imported-models",
+    name: "Imported Models",
+    component: () => import("@/views/ImportedModels.vue"),
+  },
 ];
 
 export const routes: RouteRecordRaw[] = [
